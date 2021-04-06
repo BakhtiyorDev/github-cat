@@ -1,0 +1,38 @@
+.catBox {
+  position: relative;
+  width: 310px;
+  height: 200px;
+  border-bottom: 4px solid #afafafc7;
+  overflow: hidden;
+}
+
+.catBox::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 78px;
+  width: 16px;
+  height: 4px;
+  border-radius: 20px;
+  background: #afafafc7;
+}
+
+.catBox.night::before,
+.circle1.night::before {
+  animation: boxBefore 0.6s forwards;
+  animation-delay: 0.6s;
+}
+
+.catBox::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+}
+
+.catBox.night::after {
+  background: #0d1117;
+  z-index: 5;
+}

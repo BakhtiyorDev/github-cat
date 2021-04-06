@@ -1,0 +1,45 @@
+.checkboxSelf {
+  position: relative;
+  top: -80px;
+  left: 245px;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background: #fff;
+  border: 4px solid #afafafc7;
+  cursor: pointer;
+}
+
+.checkboxSelf.night {
+  background: #271052cc;
+  border: 4px solid #3c1e70;
+}
+
+.checkboxInner {
+  position: relative;
+  top: -7px;
+  left: -5px;
+  bottom: 0;
+  transition: 0.3s;
+  height: 170%;
+  width: 75%;
+  border-radius: 50%;
+  background: #2f363d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkboxInner.night {
+  left: 20px;
+  background: #6e40c9;
+  transition: 0.3s;
+}
+.checkboxIcon {
+  color: #ecea41;
+  transform: rotate(230deg);
+}
+
+.checkboxIcon.night {
+  color: #ffffff;
+}

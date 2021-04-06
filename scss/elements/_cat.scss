@@ -1,0 +1,48 @@
+.cat {
+  position: relative;
+  z-index: -1;
+  bottom: 56px;
+  left: 94px;
+}
+
+.cat.night {
+  animation: cat 2s linear forwards;
+  animation-delay: 2s;
+}
+
+.cat.night::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  background: #009aff;
+  border-radius: 10px;
+  left: 55px;
+  top: 40px;
+  animation: catEyes 0.4s linear forwards;
+  animation-delay: 3s;
+}
+
+.cat.night:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 80px;
+  top: 40px;
+  width: 5px;
+  height: 10px;
+  background: #009aff;
+  border-radius: 10px;
+  animation: catEyes 0.4s linear forwards;
+  animation-delay: 3s;
+}
+
+.catImg {
+  position: absolute;
+  width: 120px;
+  object-fit: cover;
+}
+
+.catImg.night:last-child {
+  display: none;
+}
